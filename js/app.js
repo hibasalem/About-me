@@ -1,42 +1,37 @@
-/* eslint-disable no-useless-escape */
-/* eslint-disable no-undef */
-/* eslint-disable eqeqeq */
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-redeclare */
 'use strict';
 
-let name =prompt(' What is your name ?');
+let userName=prompt(' What is your name ?');
 
-alert('hello ' + name +'! , hope you are having a great day.\nLets start with my about me game! ');
+alert('hello ' + userName+'! , hope you are having a great day.\nLets start with my about me game! ');
 
 let result=0;
 
 //  -------------------------------------------1
 
-function qes1(dayPerson){
+let dayPerson = prompt('Am I a day person?\n(answer with yes/y or no/n)');
 
-  if (dayPerson.toLowerCase()==='yes' || dayPerson.toLowerCase()==='y') {
-    alert('it is wrong');
+function qes(dayPerson){
+  dayPerson=dayPerson.toLowerCase();
 
-    //console.log('your answer for\" Am I a day person?\" is false');
+  while (dayPerson!=='no' && dayPerson!=='yes'&& dayPerson!=='y'&& dayPerson!=='n') {
+    alert('please answer with yes/y or no/n');
+  }
 
-  }else if (dayPerson.toLowerCase()==='no'|| dayPerson.toLowerCase()==='n'){
+  if (dayPerson==='yes' || dayPerson==='y') {
+    alert('noooo! i am the ultimate night owl');
+    console.log('your answer for\" Am I a day person?\" is false');
+  }else if (dayPerson==='no'|| dayPerson==='n'){
     alert('Righht!');
-    // console.log('your answer for\" Am I a day person?\" is true');
+    console.log('your answer for\" Am I a day person?\" is true');
     result=result+1;
   }
-
-  else{
-    alert('your answer must be (yes,no)or (no,n)');
-  }
-  //console.log(result);
+  console.log(result);
 }
 
-let dayPerson = prompt('Am I a day person?\n(answer with yes/y or no/n)');
-qes1(dayPerson);
+qes(dayPerson);
 
 //  -------------------------------------------2
-/*
+
 let summerLover = prompt('Do I like summer?');
 summerLover=summerLover.toLowerCase();
 
@@ -149,14 +144,14 @@ for(let i=4 ; i>0 ; i--){
 let favColors =0;
 let userColor =0;
 
-for (let ii = 6; ii > 0; ii--) {
+for (let j = 6; j> 0; j--) {
   let favColors = ['black', 'blue', 'red'];
   console.log(favColors);
 
-  let userColor = prompt('what is my favoirte color?\nyou got ' + ii + ' attempts');
+  let userColor = prompt('what is my favoirte color?\nyou got ' + j + ' attempts');
   userColor = userColor.toLowerCase();
 
-  if (favColors[0] == userColor || favColors[1] == userColor || favColors[2] == userColor) {
+  if (favColors[0] === userColor || favColors[1] === userColor || favColors[2] === userColor) {
     alert('you got it right');
     alert('the correct answers is black , blue and red ');
     result=result+1;
@@ -165,7 +160,7 @@ for (let ii = 6; ii > 0; ii--) {
   }else{
     alert('try again');
   }
-  if(i===1){
+  if(j==1){
     alert('the correct answers is black , blue and red ');
   }
 
@@ -176,12 +171,9 @@ for (let ii = 6; ii > 0; ii--) {
 console.log('your score is '+result+ ' out of 7');
 
 if (result>=6) {
-  alert(name+', your score is '+result+ ' out of 7 , you know me well!');
+  alert(userName+', your score is '+result+ ' out of 7 , you know me well!');
 }else{
-  alert(name+', your score is '+result+ ' out of 7 , we should get to know each other better!');
+  alert(userName+', your score is '+result+ ' out of 7 , we should get to know each other better!');
 }
 
 document.getElementById('score').innerHTML = result;
-*/
-
-
