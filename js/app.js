@@ -147,6 +147,7 @@ for (let ii = 6; ii > 0; ii--) {
 
     if (favColors[0] == userColor || favColors[1] == userColor || favColors[2] == userColor) {
         alert('you got it right');
+        alert('the correct answers is black , blue and red ');
         result=result+1;
 
         break;
@@ -154,7 +155,7 @@ for (let ii = 6; ii > 0; ii--) {
         alert('try again');
     }
     if(i===1){
-        alert('the correct answers is black , blue and red ')
+        alert('the correct answers is black , blue and red ');
     }
 
 }
