@@ -1,6 +1,6 @@
 'use strict';
 
-/*let userName=prompt(' What is your name ?');
+let userName=prompt(' What is your name ?');
 
 alert('hello ' + userName+'! , hope you are having a great day.\nLets start with my about me game! ');
 
@@ -26,6 +26,7 @@ function qes(dayPerson){
     result=result+1;
   }
   console.log(result);
+  return(result);
 }
 
 qes(dayPerson);
@@ -51,6 +52,7 @@ function qes2(summerLover){
     result=result+1;
   }
   console.log(result);
+  return(result);
 }
 qes2(summerLover);
 //  -------------------------------------------3
@@ -75,6 +77,7 @@ function qes3(aliensBeliever){
   }
 
   console.log(result);
+  return(result);
 }
 qes3(aliensBeliever);
 //  -------------------------------------------4
@@ -98,6 +101,7 @@ function qes4(introvertOrNot){
     console.log('your answer for\" Am I an introvert?\" is false');
   }
   console.log(result);
+  return(result);
 }
 qes4(introvertOrNot);
 //  -------------------------------------------5
@@ -121,14 +125,17 @@ function qes5(coffeeLover){
     result=result+1;
   }
   console.log(result);
+  return(result);
 }
 qes5(coffeeLover);
 //  new ----------------------------------------6
-*/
 
-let month = 0;
+
 
 function qes6(){
+
+  let month = 0;
+
   for(let i=4 ; i>0 ; i--){
 
     let month =prompt('In witch month is my birthday? \nplease answer with a number\nyou got '+ i +' attempts') ;
@@ -147,7 +154,6 @@ function qes6(){
     } else if ( month <11 && month >0) {
       alert('no , higher ');
       console.log('your answer for\"In witch month is my birthday?\" is false');
-
     }
     else{
       alert('please insert a number between 1 and 12');
@@ -157,34 +163,41 @@ function qes6(){
       alert('the correct answer is 11 ');
     }
   }
+  return(result);
 }
 qes6();
 //   -------------------------------------------7
+
 let favColors =0;
 let userColor =0;
 
-for (let j = 6; j> 0; j--) {
-  let favColors = ['black', 'blue', 'red'];
-  console.log(favColors);
+function qes7(){
 
-  let userColor = prompt('what is my favoirte color?\nyou got ' + j + ' attempts');
-  userColor = userColor.toLowerCase();
+  for (let j = 6; j> 0; j--) {
+    let favColors = ['black', 'blue', 'red'];
+    console.log(favColors);
 
-  if (favColors[0] === userColor || favColors[1] === userColor || favColors[2] === userColor) {
-    alert('you got it right');
-    alert('the correct answers is black , blue and red ');
-    result=result+1;
+    let userColor = prompt('what is my favoirte color?\nyou got ' + j + ' attempts');
+    userColor = userColor.toLowerCase();
 
-    break;
-  }else{
-    alert('try again');
+    if (favColors[0] === userColor || favColors[1] === userColor || favColors[2] === userColor) {
+      alert('you got it right');
+      alert('the correct answers is black , blue and red ');
+      result=result+1;
+
+      break;
+    }else{
+      alert('try again');
+    }
+    if(j===1){
+      alert('the correct answers is black , blue and red ');
+    }
+
   }
-  if(j==1){
-    alert('the correct answers is black , blue and red ');
-  }
-
+  return(result);
 }
 
+qes7();
 //   -------------------------------------------
 
 console.log('your score is '+result+ ' out of 7');
