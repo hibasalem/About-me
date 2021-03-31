@@ -1,6 +1,6 @@
 'use strict';
 
-let userName=prompt(' What is your name ?');
+/*let userName=prompt(' What is your name ?');
 
 alert('hello ' + userName+'! , hope you are having a great day.\nLets start with my about me game! ');
 
@@ -30,25 +30,29 @@ function qes(dayPerson){
 
 qes(dayPerson);
 
-//  -------------------------------------------2
+//  -------------------------------------------2 
+*/
 
 let summerLover = prompt('Do I like summer?');
-summerLover=summerLover.toLowerCase();
 
-while (summerLover!=='no' && summerLover!=='yes'&& summerLover!=='y'&& summerLover!=='n') {
-  alert('please answer with yes/y or no/n');
+function qes2(summerLover){
+  summerLover=summerLover.toLowerCase();
+
+  while (summerLover!=='no' && summerLover!=='yes'&& summerLover!=='y'&& summerLover!=='n') {
+    alert('please answer with yes/y or no/n');
+  }
+
+  if (summerLover==='yes'|| summerLover==='y') {
+    alert('nope!');
+    console.log('your answer for\" Do I like summer?\" is false');
+  }else if (summerLover==='no'|| summerLover==='n'){
+    alert('Right! winter is the best');
+    console.log('your answer for\" Do I like summer?\" is true');
+    result=result+1;
+  }
+  console.log(result);
 }
-
-if (summerLover==='yes'|| summerLover==='y') {
-  alert('nope!');
-  console.log('your answer for\" Do I like summer?\" is false');
-}else if (summerLover==='no'|| summerLover==='n'){
-  alert('Right! winter is the best');
-  console.log('your answer for\" Do I like summer?\" is true');
-  result=result+1;
-}
-console.log(result);
-
+qes2(summerLover);
 //  -------------------------------------------3
 
 let aliensBeliever = prompt('Do I believe in aliens?');
