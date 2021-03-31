@@ -103,17 +103,20 @@ console.log(result);
 
 //  new ----------------------------------------6
 
+let month = 0
+
 for(let i=4 ; i>0 ; i--){
 
     let month =prompt('In witch month is my birthday? \nplease answer with a number\nyou got '+ i +' attempts') ;
+    month=parseInt(month);
 
-    if(month == 11){
+    if(month === 11){
         alert("you got it right");
         console.log('your answer for\"In witch month is my birthday?\" is true');
         result=result+1;
         break; 
     }
-    else if (month == 12 ) {
+    else if (month === 12 ) {
         alert("no , lower ");
         console.log('your answer for\"In witch month is my birthday?\" is false');   
 
@@ -126,9 +129,14 @@ for(let i=4 ; i>0 ; i--){
         alert("please insert a number between 1 and 12");
 
     }
+    if(i===1){
+        alert('the correct answer is 11 ')
+    }
 }
 
 //   -------------------------------------------7
+ let favColors =0 
+ let userColor =0
 
 for (let ii = 6; ii > 0; ii--) {
     let favColors = ['black', 'blue', 'red'];
@@ -145,9 +153,11 @@ for (let ii = 6; ii > 0; ii--) {
     }else{
         alert('try again');
     }
+    if(i===1){
+        alert('the correct answers is black , blue and red ')
+    }
 
 }
-alert("the correct answers is black , blue and red");
 
 //   -------------------------------------------
 
