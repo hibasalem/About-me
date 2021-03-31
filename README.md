@@ -4,9 +4,9 @@
 
 ## About Me, with a guessing game
 
-this project is a practice prioject for lab 02 for 201 course 
+this project is a practice prioject for lab 02 for 201 course
 
-# Author: hiba salem 
+# Author: hiba salem
 
 How did this go, overall?
 this lab was exciting actually
@@ -18,4 +18,9 @@ How long did it take you to complete this assignment?
 about 3  hours
 
 And, before you started, how long did you think it would take you to complete this assignment?
-almost the same 
+almost the same
+
+## lab 02
+
+- I was the navigator: <https://github.com/hibasalem>
+- I was the driver : <https://github.com/LanaSShamayleh>
