@@ -78,7 +78,7 @@ function qes3(aliensBeliever){
 }
 qes3(aliensBeliever);
 //  -------------------------------------------4
-*/
+
 
 let introvertOrNot = prompt('Am I an introvert?');
 
@@ -101,24 +101,28 @@ function qes4(introvertOrNot){
 }
 qes4(introvertOrNot);
 //  -------------------------------------------5
+*/
 
 let coffeeLover = prompt('Am I a coffee lover?');
-coffeeLover=coffeeLover.toLowerCase();
 
-while (coffeeLover!=='no' && coffeeLover!=='yes' && coffeeLover!=='n' && coffeeLover!=='y') {
-  alert('please answer with yes/y or no/n');
+function qes5(coffeeLover){
+  coffeeLover=coffeeLover.toLowerCase();
+
+  while (coffeeLover!=='no' && coffeeLover!=='yes' && coffeeLover!=='n' && coffeeLover!=='y') {
+    alert('please answer with yes/y or no/n');
+  }
+
+  if (coffeeLover==='yes'|| coffeeLover==='y') {
+    alert('nope! tea all the time ');
+    console.log('your answer for\" Am I a coffee lover?\" is false');
+  }else if (coffeeLover==='no'|| coffeeLover==='n'){
+    alert('Right! tea all the time ');
+    console.log('your answer for\" Am I a coffee lover?\" is true');
+    result=result+1;
+  }
+  console.log(result);
 }
-
-if (coffeeLover==='yes'|| coffeeLover==='y') {
-  alert('nope! tea all the time ');
-  console.log('your answer for\" Am I a coffee lover?\" is false');
-}else if (coffeeLover==='no'|| coffeeLover==='n'){
-  alert('Right! tea all the time ');
-  console.log('your answer for\" Am I a coffee lover?\" is true');
-  result=result+1;
-}
-console.log(result);
-
+qes5(coffeeLover);
 //  new ----------------------------------------6
 
 let month = 0;
