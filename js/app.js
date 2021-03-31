@@ -30,8 +30,8 @@ function qes(dayPerson){
 
 qes(dayPerson);
 
-//  -------------------------------------------2 
-*/
+//  -------------------------------------------2
+
 
 let summerLover = prompt('Do I like summer?');
 
@@ -54,25 +54,29 @@ function qes2(summerLover){
 }
 qes2(summerLover);
 //  -------------------------------------------3
+*/
 
 let aliensBeliever = prompt('Do I believe in aliens?');
-aliensBeliever=aliensBeliever.toLowerCase();
 
-while (aliensBeliever!=='no' && aliensBeliever!=='yes' && aliensBeliever!=='n' && aliensBeliever!=='y' ) {
-  alert('please answer with yes/y or no/n');
+function qes3(aliensBeliever){
+  aliensBeliever=aliensBeliever.toLowerCase();
+
+  while (aliensBeliever!=='no' && aliensBeliever!=='yes' && aliensBeliever!=='n' && aliensBeliever!=='y' ) {
+    alert('please answer with yes/y or no/n');
+  }
+
+  if (aliensBeliever==='yes'|| aliensBeliever==='y') {
+    alert('sure i do ,why not!');
+    console.log('your answer for\" Do I believe in aliens?\" is true');
+    result=result+1;
+  }else if (aliensBeliever==='no'|| aliensBeliever==='y'){
+    alert('no, i do believe on them actually!');
+    console.log('your answer for\" Do I believe in aliens?\" is false');
+  }
+
+  console.log(result);
 }
-
-if (aliensBeliever==='yes'|| aliensBeliever==='y') {
-  alert('sure i do ,why not!');
-  console.log('your answer for\" Do I believe in aliens?\" is true');
-  result=result+1;
-}else if (aliensBeliever==='no'|| aliensBeliever==='y'){
-  alert('no, i do believe on them actually!');
-  console.log('your answer for\" Do I believe in aliens?\" is false');
-}
-
-console.log(result);
-
+qes3(aliensBeliever);
 //  -------------------------------------------4
 
 let introvertOrNot = prompt('Am I an introvert?');
