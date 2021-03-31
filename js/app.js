@@ -101,7 +101,7 @@ function qes4(introvertOrNot){
 }
 qes4(introvertOrNot);
 //  -------------------------------------------5
-*/
+
 
 let coffeeLover = prompt('Am I a coffee lover?');
 
@@ -124,38 +124,41 @@ function qes5(coffeeLover){
 }
 qes5(coffeeLover);
 //  new ----------------------------------------6
+*/
 
 let month = 0;
 
-for(let i=4 ; i>0 ; i--){
+function qes6(){
+  for(let i=4 ; i>0 ; i--){
 
-  let month =prompt('In witch month is my birthday? \nplease answer with a number\nyou got '+ i +' attempts') ;
-  month=parseInt(month);
+    let month =prompt('In witch month is my birthday? \nplease answer with a number\nyou got '+ i +' attempts') ;
+    month=parseInt(month);
 
-  if(month === 11){
-    alert('you got it right');
-    console.log('your answer for\"In witch month is my birthday?\" is true');
-    result=result+1;
-    break;
-  }
-  else if (month === 12 ) {
-    alert('no , lower ');
-    console.log('your answer for\"In witch month is my birthday?\" is false');
+    if(month === 11){
+      alert('you got it right');
+      console.log('your answer for\"In witch month is my birthday?\" is true');
+      result=result+1;
+      break;
+    }
+    else if (month === 12 ) {
+      alert('no , lower ');
+      console.log('your answer for\"In witch month is my birthday?\" is false');
 
-  } else if ( month <11 && month >0) {
-    alert('no , higher ');
-    console.log('your answer for\"In witch month is my birthday?\" is false');
+    } else if ( month <11 && month >0) {
+      alert('no , higher ');
+      console.log('your answer for\"In witch month is my birthday?\" is false');
 
-  }
-  else{
-    alert('please insert a number between 1 and 12');
+    }
+    else{
+      alert('please insert a number between 1 and 12');
 
-  }
-  if(i===1){
-    alert('the correct answer is 11 ');
+    }
+    if(i===1){
+      alert('the correct answer is 11 ');
+    }
   }
 }
-
+qes6();
 //   -------------------------------------------7
 let favColors =0;
 let userColor =0;
