@@ -54,7 +54,7 @@ function qes2(summerLover){
 }
 qes2(summerLover);
 //  -------------------------------------------3
-*/
+
 
 let aliensBeliever = prompt('Do I believe in aliens?');
 
@@ -78,24 +78,28 @@ function qes3(aliensBeliever){
 }
 qes3(aliensBeliever);
 //  -------------------------------------------4
+*/
 
 let introvertOrNot = prompt('Am I an introvert?');
-introvertOrNot=introvertOrNot.toLowerCase();
 
-while (introvertOrNot!=='no' && introvertOrNot!=='yes' && introvertOrNot!=='n' && introvertOrNot!=='y') {
-  alert('please answer with yes/y or no/n');
+function qes4(introvertOrNot){
+  introvertOrNot=introvertOrNot.toLowerCase();
+
+  while (introvertOrNot!=='no' && introvertOrNot!=='yes' && introvertOrNot!=='n' && introvertOrNot!=='y') {
+    alert('please answer with yes/y or no/n');
+  }
+
+  if (introvertOrNot==='yes'|| introvertOrNot==='y') {
+    alert('yes, that\'s true!');
+    console.log('your answer for\" Am I an introvert?\" is true');
+    result=result+1;
+  }else if (introvertOrNot==='no'|| introvertOrNot==='y'){
+    alert('no, i am an introvert!');
+    console.log('your answer for\" Am I an introvert?\" is false');
+  }
+  console.log(result);
 }
-
-if (introvertOrNot==='yes'|| introvertOrNot==='y') {
-  alert('yes, that\'s true!');
-  console.log('your answer for\" Am I an introvert?\" is true');
-  result=result+1;
-}else if (introvertOrNot==='no'|| introvertOrNot==='y'){
-  alert('no, i am an introvert!');
-  console.log('your answer for\" Am I an introvert?\" is false');
-}
-console.log(result);
-
+qes4(introvertOrNot);
 //  -------------------------------------------5
 
 let coffeeLover = prompt('Am I a coffee lover?');
